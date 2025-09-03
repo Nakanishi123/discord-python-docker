@@ -32,4 +32,4 @@ jobs:
           push: true
           tags: |
             ghcr.io/nakanishi123/discord-python-docker:3.13.7-slim-trixie
-            ghcr.io/nakanishi123/discord-python-dockerdiscord-python-docker:latest
+            ghcr.io/nakanishi123/discord-python-docker:latest
