@@ -27,10 +27,13 @@ jobs:
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
 
+      - name: Set timestamp
+        run: echo "TIMESTAMP=$(date +%y.%m%d.%H%M)" >> $GITHUB_ENV
+
       - name: Build and Push Docker Image to GHCR
         uses: docker/build-push-action@v6
         with:
           push: true
           tags: |
-            ghcr.io/nakanishi123/discord-python-docker:$(date +%y.%m%d.%H%M)
+            ghcr.io/nakanishi123/discord-python-docker:${{ env.TIMESTAMP }}
             ghcr.io/nakanishi123/discord-python-docker:latest
