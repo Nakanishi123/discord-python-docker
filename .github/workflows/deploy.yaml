@@ -32,5 +32,5 @@ jobs:
         with:
           push: true
           tags: |
-            ghcr.io/nakanishi123/discord-python-docker:3.13.8-slim-trixie
+            ghcr.io/nakanishi123/discord-python-docker:$(date +%y.%m%d.%H%M)
             ghcr.io/nakanishi123/discord-python-docker:latest
