@@ -30,7 +30,7 @@ jobs:
       - name: Set timestamp
         run: |
           echo "TIMESTAMP=$(date +%y.%m%d.%H%M)" >> $GITHUB_ENV
-          echo "DATESTAMP=$(date +%y.%m%d)" >> $GITHUB_ENV
+          echo "DATESTAMP=$(date +%y.%-j)" >> $GITHUB_ENV
           echo "MONTHSTAMP=$(date +%y.%m)" >> $GITHUB_ENV
 
       - name: Build and Push Docker Image to GHCR
