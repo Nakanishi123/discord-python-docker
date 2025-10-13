@@ -1,5 +1,5 @@
 discord.py==2.6.3
-fastapi==0.118.0
+fastapi==0.119.0
 google-genai==1.41.0
 httpx==0.28.1
 loguru==0.7.3
