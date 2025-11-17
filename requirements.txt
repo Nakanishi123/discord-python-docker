@@ -1,4 +1,4 @@
-discord.py==2.6.3
+discord.py==2.6.4
 fastapi==0.120.1
 google-genai==1.41.0
 httpx==0.28.1
